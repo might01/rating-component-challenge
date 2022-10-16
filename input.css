@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="radio"] {
+  display: none;
+}
+
+div > input[type="radio"]:checked + label {
+  @apply bg-orange text-white group-hover:bg-orange group-hover:text-white;
+}

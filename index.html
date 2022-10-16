@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body class="bg-veryDarkBlue text-white">
+    <main class="container h-screen mx-auto flex justify-center items-center">
+      <div
+        class="bg-darkBlue rounded-3xl p-5 md:p-8 md:w-[26rem] md:h-[26rem] w-[20rem] h-[22rem]"
+      >
+        <!-- Rating state start -->
+        <div id="rating-panel">
+          <div class="mb-4 md:mb-8">
+            <img
+              src="images/icon-star.svg"
+              class="w-10 p-3 rounded-full bg-lightGrey/10"
+            />
+          </div>
+          <h1 class="mb-2 md:mb-6 text-2xl font-bold tracking-wide">
+            How did we do?
+          </h1>
+          <p class="mb-7 text-sm md:mb-9 md:text-base2 text-lightGrey">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form id="rating-form" lass="text-lightGrey flex flex-col space-y-8">
+            <div class="flex flex-row justify-between mb-6 text-mediumGrey">
+              <div
+                class="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center"
+              >
+                <input type="radio" value="1" id="input1" name="group1" />
+                <label
+                  for="input1"
+                  class="pt-2 md:pt-4 bg-lightGrey/10 w-full h-full text-center rounded-full font-bold cursor-pointer hover:text-white hover:bg-lightGrey"
+                  >1</label
+                >
+              </div>
+              <div
+                class="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center"
+              >
+                <input type="radio" value="2" id="input2" name="group1" />
+                <label
+                  for="input2"
+                  class="pt-2 md:pt-4 bg-lightGrey/10 w-full h-full text-center rounded-full font-bold cursor-pointer hover:text-white hover:bg-lightGrey"
+                  >2</label
+                >
+              </div>
+              <div
+                class="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center"
+              >
+                <input type="radio" value="3" id="input3" name="group1" />
+                <label
+                  for="input3"
+                  class="pt-2 md:pt-4 bg-lightGrey/10 w-full h-full text-center rounded-full font-bold cursor-pointer hover:text-white hover:bg-lightGrey"
+                  >3</label
+                >
+              </div>
+              <div
+                class="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center"
+              >
+                <input type="radio" value="4" id="input4" name="group1" />
+                <label
+                  for="input4"
+                  class="pt-2 md:pt-4 bg-lightGrey/10 w-full h-full text-center rounded-full font-bold cursor-pointer hover:text-white hover:bg-lightGrey"
+                  >4</label
+                >
+              </div>
+              <div
+                class="w-10 h-10 md:w-14 md:h-14 flex justify-center items-center"
+              >
+                <input type="radio" value="5" id="input5" name="group1" />
+                <label
+                  for="input5"
+                  class="pt-2 md:pt-4 bg-lightGrey/10 w-full h-full text-center rounded-full font-bold cursor-pointer hover:text-white hover:bg-lightGrey"
+                  >5</label
+                >
+              </div>
+            </div>
+
+            <button
+              class="w-full bg-orange rounded-full pt-3 pb-2 uppercase text-sm align-middle tracking-widest text-white hover:bg-white hover:text-orange"
+            >
+              <span>Submit</span>
+            </button>
+          </form>
+        </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div id="summary-panel" class="pt-4 px-2 flex-col items-center hidden">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt=""
+            class="mb-6 md:mb-8 w-36 md:w-max"
+          />
+          <h2
+            id="score"
+            class="py-1 px-6 rounded-full text-orange text-sm bg-lightGrey/10 tracking-wide mb-6 md:mb-8"
+          >
+            You selected 4 out of 5
+          </h2>
+          <h1 class="text-2xl md:text-3xl text-bold mb-2">Thank you!</h1>
+          <p class="text-center text-sm md:text-base2 text-mediumGrey">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+        <!-- Thank you state end -->
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
